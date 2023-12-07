@@ -14,9 +14,8 @@ struct PostModel:Identifiable, Equatable{
     var nombreImagenPost : String?
     var NombrePersona : String
     var nombreImagen :String
-    var questions: Int
 }
 extension PostModel {
     
-    public static var defaultHome = PostModel(titulo: "Inicio de clases", descripcion: "Estoy super emocionada de empezar mis clases como inginiera de Software, ¿Sabías que solo 3 de cada 10 personas estudiando ingeniería son mujeres?", nombreImagenPost: "PostClau", NombrePersona: "@clauarciengam", nombreImagen: "clau", questions: 13)
+    public static var defaultHome = PostModel(titulo: "Inicio de clases", descripcion: "Estoy super emocionada de empezar mis clases como inginiera de Software, ¿Sabías que solo 3 de cada 10 personas estudiando ingeniería son mujeres?", nombreImagenPost: "PostClau", NombrePersona: "@clauarciengam", nombreImagen: "clau")
 }
