@@ -17,5 +17,5 @@ struct PostModel:Identifiable, Equatable{
 }
 extension PostModel {
     
-    public static var defaultHome = PostModel(titulo: "Inicio de clases", descripcion: "Estoy super emocionada de empezar mis clases como inginiera de Software, ¿Sabías que solo 3 de cada 10 personas estudiando ingeniería son mujeres?", nombreImagenPost: "PostClau", NombrePersona: "@clauarciengam", nombreImagen: "clau")
+    public static var defaultHome = PostModel(titulo: "El Beso", descripcion: "No pude soportar representar lo mucho que quiero a mi novia 🤍", nombreImagenPost: "gustavklimtPost1", NombrePersona:"@klimt", nombreImagen: "gustavklimtProfile")
 }
