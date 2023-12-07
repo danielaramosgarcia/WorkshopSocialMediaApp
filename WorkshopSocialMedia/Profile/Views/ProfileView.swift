@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ProfileView: View {
     
-    @EnvironmentObject var homeVM: PostViewModel
+    @EnvironmentObject var postVM: PostViewModel
     let profile : ProfileModel
 
     var body: some View {
@@ -74,8 +74,8 @@ struct ProfileView: View {
                     Divider()
                         .background(Color("AppleGray"))
                     
-                    ForEach(homeVM.getPostsForUser(username: profile.username)) { post in
-                        PostView(home: post)
+                    ForEach(postVM.getPostsForUser(username: profile.username)) { post in
+                        PostView(post: post)
                         
                     }
                 }

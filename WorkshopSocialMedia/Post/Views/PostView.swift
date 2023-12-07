@@ -9,14 +9,14 @@ import SwiftUI
 
 struct PostView: View {
     
-    let home : PostModel
+    let post : PostModel
     
     
     var body: some View {
         VStack(alignment: .leading){
             
             HStack{
-                Image(home.nombreImagen)
+                Image(post.nombreImagen)
                     .resizable()
                     .scaledToFit()
                     .clipShape(Circle())
@@ -24,10 +24,10 @@ struct PostView: View {
                     .padding()
                 
                 VStack{
-                    Text(home.titulo)
+                    Text(post.titulo)
                         .font(.title)
                         .frame(alignment: .leading)
-                    Text(home.NombrePersona)
+                    Text(post.NombrePersona)
                         .font(.title3)
                         .foregroundColor(.gray)
                         .frame(alignment: .leading)
@@ -35,9 +35,9 @@ struct PostView: View {
                 Spacer()
             }
             VStack{
-                Text(home.descripcion)
+                Text(post.descripcion)
                     .frame(alignment: .leading)
-                if let imageName = home.nombreImagenPost, !imageName.isEmpty {
+                if let imageName = post.nombreImagenPost, !imageName.isEmpty {
                     Image(imageName)
                         .resizable()
                         .scaledToFit()
@@ -72,6 +72,6 @@ struct PostView: View {
 
 struct PostView_Previews: PreviewProvider {
     static var previews: some View {
-        PostView(home: PostModel.defaultHome)
+        PostView(post: PostModel.defaultHome)
     }
 }

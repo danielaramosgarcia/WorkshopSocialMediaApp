@@ -12,6 +12,8 @@ struct WorkshopSocialMediaApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationTabView()
+                .environmentObject(PostViewModel())
+
         }
     }
 }

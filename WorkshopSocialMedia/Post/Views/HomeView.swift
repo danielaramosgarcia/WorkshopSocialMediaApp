@@ -10,30 +10,15 @@ import SwiftUI
 
 struct HomeView: View {
     
-    @EnvironmentObject var homeVM: PostViewModel
+    @EnvironmentObject var postVM: PostViewModel
     
     var body: some View {
-        VStack {
-                
-            HStack{
-                Spacer()
-                Image("artIcon")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 40, height: 40)
-                
-                Spacer()
+        ScrollView(.vertical, showsIndicators: false) {
+            ForEach(postVM.arrPost) { item in
+                PostView(post: item)
+                    .foregroundColor(Color(.black))
             }
-            .foregroundColor(.gray)
-            .clipShape(Circle())
-
-            ScrollView(.vertical, showsIndicators: false) {
-                ForEach(homeVM.arrHome) { item in
-                    PostView(home: item)
-                        .foregroundColor(Color(.black))
-                }
-            }
-        }
+        }  
     }
 }
 
@@ -41,6 +26,6 @@ struct HomeView: View {
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
-            .environmentObject( PostViewModel())
+            .environmentObject(PostViewModel())
     }
 }

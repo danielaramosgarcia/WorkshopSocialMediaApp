@@ -15,6 +15,7 @@ struct NavigationTabView: View {
             TabView() {
                 VStack {
                     HomeView()
+
                 }
                 .tabItem{
                     Label("Inicio", systemImage: "house")
