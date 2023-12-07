@@ -45,6 +45,8 @@ struct PostView: View {
                 }
                 
             }
+            
+            
             HStack{
                 Spacer()
                 Image(systemName: "heart")
@@ -64,7 +66,8 @@ struct PostView: View {
             
             Rectangle()
                 .frame(height:2)
-                .foregroundColor(Color("LightGray"))
+                .foregroundColor(Color(.gray))
+            
         }
     }
     

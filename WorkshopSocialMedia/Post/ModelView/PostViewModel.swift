@@ -17,12 +17,9 @@ class PostViewModel : ObservableObject{
         getPost()
     }
     
-    
     func getPost() {
         
         var post : PostModel
-        
-        
         
         post = PostModel(titulo: "La última cena", descripcion: "Me llego mucha inspiracion para este cuadro, espero les guste me tomo mucho tiempo y muchas cenas.", nombreImagenPost: "davinciPost1", NombrePersona: "@davinci", nombreImagen: "davinciProfile")
         arrPost.append(post)
@@ -41,8 +38,6 @@ class PostViewModel : ObservableObject{
         post = PostModel(titulo: "El Beso", descripcion: "No pude soportar representar lo mucho que quiero a mi novia 🤍", nombreImagenPost: "gustavklimtPost1", NombrePersona:"@klimt", nombreImagen: "gustavklimtProfile")
         arrPost.append(post)
         
-
-        
         post = PostModel(titulo: "Fogata", descripcion: "Ante la luz de la fogata es cuando puedo realmente pensar en mi vida.", nombreImagenPost: "rembrandtPost1", NombrePersona: "@rembrandt", nombreImagen: "rembrandtProfile")
         arrPost.append(post)
         
@@ -51,10 +46,6 @@ class PostViewModel : ObservableObject{
         
         post = PostModel(titulo: "En el lago", descripcion: "No les parece que es momento de retomar remar en lagos", nombreImagenPost: "rembrandtPost2", NombrePersona: "@rembrandt", nombreImagen: "rembrandtProfile")
         arrPost.append(post)
-        
-        
-        
-        
         
     }
     
