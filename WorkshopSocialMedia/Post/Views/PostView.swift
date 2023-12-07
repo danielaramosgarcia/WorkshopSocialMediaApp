@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PostView: View {
     
-    let home : HomeModel
+    let home : PostModel
     
     
     var body: some View {
@@ -30,6 +30,7 @@ struct PostView: View {
                     Text(home.NombrePersona)
                         .font(.title3)
                         .foregroundColor(.gray)
+                        .frame(alignment: .leading)
                 }
                 Spacer()
             }
@@ -71,6 +72,6 @@ struct PostView: View {
 
 struct PostView_Previews: PreviewProvider {
     static var previews: some View {
-        PostView(home: HomeModel.defaultHome)
+        PostView(home: PostModel.defaultHome)
     }
 }
