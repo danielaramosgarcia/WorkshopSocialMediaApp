@@ -1,10 +1,3 @@
-//
-//  ProfileModel.swift
-//  WorkshopSocialMedia
-//
-//  Created by Daniela Ramos Garcia on 07/12/23.
-//
-
 import Foundation
 
 struct ProfileModel:Identifiable, Equatable{
@@ -19,5 +12,5 @@ struct ProfileModel:Identifiable, Equatable{
 }
 extension ProfileModel {
     
-    public static var defaultProfile = ProfileModel(nombrePersona: "Van Gogh", username : "@vangogh", profilePicture: "vangoghProfile", description:"Hola soy Claudia, estudiante de ingeniería en tecnologías computacionales en el Tec de Monterrey. Apasionada por aprender y emocionada por ser parte del mundo tecnológico.", followers: "1,225", following: "934")
+    public static var defaultProfile = ProfileModel(nombrePersona: "Van Gogh", username : "@vangogh", profilePicture: "vangoghProfile", description:"Hola soy Vangogh, nací en Zundert, Países Bajos, en 1853. A lo largo de mi vida, luché con la pasión por la pintura, dejando un legado artístico con obras como La noche estrellada y Los girasoles, a pesar de las batallas internas que marcaron mi camino.", followers: "10,530", following: "58")
 }
