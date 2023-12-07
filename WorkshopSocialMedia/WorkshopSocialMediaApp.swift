@@ -11,7 +11,7 @@ import SwiftUI
 struct WorkshopSocialMediaApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationTabView()
         }
     }
 }
